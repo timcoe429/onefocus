@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppProvider } from './context/AppContext'
 import Header from './components/Layout/Header'
-import ProjectSelection from './components/ProjectSelection/ProjectGrid'
+import ProjectGrid from './components/ProjectSelection/ProjectGrid' // Fix: was ProjectSelection
 import SprintMode from './components/Sprint/SprintMode'
 import { useSprint } from './hooks/useSprint'
 
@@ -11,7 +11,7 @@ function AppContent() {
   return (
     <div className="app">
       <Header />
-      {currentSprint ? <SprintMode /> : <ProjectSelection />}
+      {currentSprint ? <SprintMode /> : <ProjectGrid />}
     </div>
   )
 }
