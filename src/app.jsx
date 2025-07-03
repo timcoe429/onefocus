@@ -1,8 +1,8 @@
 import React from 'react'
 import { AppProvider } from './context/AppContext'
-import Header from './components/Layout/Header'
-import ProjectGrid from './components/ProjectSelection/ProjectGrid' // Fix: was ProjectSelection
-import SprintMode from './components/Sprint/SprintMode'
+import Header from './components/Layout/Header.jsx'
+import ProjectGrid from './components/ProjectSelection/ProjectGrid.jsx'
+import SprintMode from './components/Sprint/SprintMode.jsx'
 import { useSprint } from './hooks/useSprint'
 
 function AppContent() {
